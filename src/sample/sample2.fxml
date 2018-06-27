@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+    <children>
+        <SplitPane orientation="VERTICAL" prefHeight="500.0" prefWidth="750.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <HBox prefHeight="224.0" prefWidth="748.0">
+                            <children>
+                                <VBox alignment="TOP_CENTER" prefHeight="180.0" prefWidth="108.0">
+                                    <children>
+                                        <Label prefHeight="35.0" prefWidth="109.0" text="         Process">
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="109.0" text="             P1">
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="45.0" prefHeight="35.0" prefWidth="109.0" text="             P2">
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label alignment="TOP_LEFT" layoutX="10.0" layoutY="80.0" prefHeight="35.0" prefWidth="109.0" text="             P3">
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="115.0" prefHeight="35.0" prefWidth="109.0" text="             P4">
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets right="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="108.0">
+                                    <children>
+                                        <Label prefHeight="32.0" prefWidth="110.0" text="        Arrival Time">
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="at0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="22.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="at1" layoutX="10.0" layoutY="42.0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="17.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="at2" layoutX="10.0" layoutY="67.0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="17.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="at3" layoutX="10.0" layoutY="92.0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="17.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets right="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                                <VBox layoutX="118.0" layoutY="10.0" prefHeight="180.0" prefWidth="108.0">
+                                    <children>
+                                        <Label prefHeight="32.0" prefWidth="110.0" text="         Burst Time">
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="bt0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="22.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="bt1" layoutX="10.0" layoutY="42.0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="17.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="bt2" layoutX="10.0" layoutY="67.0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="17.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="bt3" layoutX="10.0" layoutY="92.0" text="0">
+                                            <VBox.margin>
+                                                <Insets top="17.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets right="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <HBox.margin>
+                              <Insets left="150.0" />
+                           </HBox.margin>
+                           <children>
+                              <Button fx:id="bf" mnemonicParsing="false" onAction="#btf" text="FCFS">
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="bs" mnemonicParsing="false" onAction="#bts" text=" SJF ">
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="bl" alignment="CENTER" mnemonicParsing="false" onAction="#btl" text=" LJF " />
+                           </children>
+                        </VBox>
+                            </children>
+                        </HBox>
+                  <BarChart fx:id="barChart" layoutY="229.0" prefHeight="245.0" prefWidth="748.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Button fx:id="btn2" layoutX="348.0" layoutY="472.0" mnemonicParsing="false" onAction="#btn2clicked" text="Home" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
